@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymleaf.org">
+    <head>
+        <title>The Blogger</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
+        <link rel="stylesheet" th:href="@{css/style.css}" href="../static/css/style.css"/>
+       
+    </head>
+        <body>
+             <!-- Navbar -->
+             <div class="container-for-navbar">
+                 	<ul>
+                 		<li><button id="home-button">Home</button></li>
+                 		<li><button id="myblog-button">My Blogs</button></li>
+                 		<li><button id="search-button" type="submit" >Search For Blogger</button></li>
+                 		<li><input type="text" placeholder="Enter Name"/></li>
+                 	</ul>
+            </div>
+             <!--Login Box-->
+            <div class="container-for-login">
+                 <form>
+                    <div class="login-text">
+                        <!--Username-->
+                        <label for="uname"><b>Username:</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname"/>
+                        <!--Password-->
+                        <label for="psw"><b>Password:</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw"/>
+                        
+                        <button id="login-button" type="submit">Login</button>
+                     	<button id="registration-button" type="submit">Registration</button>
+                     </div>
+                </form>
+            </div>
+            <!-- Main Container -->
+            <div class="main-container">
+                    <!-- Title Section -->
+                    <div class="title">
+                        <h1>The Blogger</h1>
+                        <h3 id="welcome">Welcome to my blogsite</h3>
+                    </div>
+                <!-- Introduction -->
+                <div class="introduction">
+                        <img id="image-for-int" th:src="@{/images/anonymous_wants_you.jpg}"/>
+                        <h3>My Name</h3>    
+                    <p>talk about yourself</p>
+                </div>
+                <!-- Blogger Entries -->
+                <div class="blog-entry">
+                       <article th:each = "story : ${stories}">
+                        <h2 th:text = "${story.title}">Title Heading</h2>
+                        <h3 th:text = "${story.description}">Title Description </h3>
+                        <h5 th:text = "${#dates.format(#dates.createNow(), 'dd MMMMMM yyyy')}"></h5>
+                        <p>post</p>
+                        
+                		</article>
+                </div>  
+               <div class="footer">Made by Kakuk</div>
+            </div>
+          	 
+        </body>
+       
+</html>

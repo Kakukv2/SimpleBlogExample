@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: SimpleBlogExample
+Implementation-Version: 0.0.1
+Built-By: Kakuk
+Implementation-Vendor-Id: com.simpleBlog
+Build-Jdk: 1.8.0_161
+Implementation-URL: http://projects.spring.io/spring-boot/SimpleBlogEx
+ ample/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

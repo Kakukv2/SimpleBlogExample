@@ -1,0 +1,192 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    background-color: whitesmoke;
+    color: black;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+    padding:1em;
+}
+.main-container
+{
+    max-width: 1150px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:1em;
+}
+/* introduction page css */
+.introduction
+{
+    margin: 30px auto 30px auto;
+    border-radius: 5px;
+    padding: 25px 15px 25px 15px;
+    width: 30%;
+    float: right;
+    text-align: left;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5)
+}
+/* blog entries css */
+.blog-entry
+{
+    margin: 30px auto 30px auto;
+    border-radius: 5px;
+    padding: 25px 15px 25px 15px;
+    max-width: 750px;
+    width: 70%;
+    float: left;
+    text-align: left;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5)
+}
+.blog-entry button
+{
+    line-height: 35px;
+    border-color:  dimgray;
+    text-transform: uppercase;
+    background-color: dimgray;
+    color: white;
+}
+/* title section */
+.title
+{
+    max-height: 200px;
+    line-height: 30px;
+    text-align: center;
+    background-color: lightgray;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+
+/*image css*/
+#image-for-int
+{
+    max-height: 80%;
+    max-width: 80%;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.4);
+}
+
+/* footer css */
+.footer
+{
+    margin: 15px auto auto auto ;
+    padding: 5px 5px 5px 15px;
+    line-height: 50px;
+    display: grid;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+    width: 100%;
+    background-color: dimgray;
+    border-radius: 5px;
+}
+.title h1
+{
+     text-shadow: 2px 2px dimgray;
+}
+#welcome
+{
+	 text-shadow: 1.5px 1.5px dimgray;
+}
+
+/*login css */
+.container-for-login
+{
+    border-radius: 5px;
+    margin: auto;
+    padding: auto;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+    float: right;
+}
+#login-button, #registration-button
+{
+    line-height: 26px;
+    border-color:  dimgray;
+    text-transform: uppercase;
+    background-color: dimgray;
+    color: white;
+    border-radius: 5px;
+}
+.login-text
+{
+    line-height: 26px;
+    font-size: 15px;
+}
+
+/* error page css */
+.error-container
+{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+    margin: auto;
+    padding:1em;
+    border-radius: 5px;
+}
+#error-line
+{
+	width: 300px;
+	margin-left: 0.2%;
+	border-width: 2.5px;
+}
+.error-details
+{
+	max-width: 400px;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+	background-color: lightgray;
+	border-radius: 5px;
+}
+
+/*css for navbar */
+.container-for-navbar
+{
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+    float: left;
+    line-height: 26px;
+}
+ul
+{
+	list-style-type: none;
+	margin: auto;
+	padding: 0px;
+}
+li
+{
+	display: inline;
+	padding: auto;
+	margin:0px;
+}
+/* css for buttons*/
+#home-button, #search-button, #myblog-button
+{
+    line-height: 26px;
+    border-color:  dimgray;
+    text-transform: uppercase;
+    background-color: dimgray;
+    color: white;
+    border-radius: 5px;
+}
+
+/* css for home page */
+.blog-entry-home
+{
+	margin: 30px auto 30px auto;
+    border-radius: 5px;
+    padding: 25px 15px 25px 15px;
+    max-width: 1200px;
+    width: 100%;
+    float: center;
+    text-align: left;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5)
+}
+
+#bloggerName
+{
+	text-shadow: 0.5px 0.5px;
+	font-weight: bold; 
+}
+#postedBy
+{
+	color: gray;
+	margin-bottom: 0px;
+	font-style: italic;
+}

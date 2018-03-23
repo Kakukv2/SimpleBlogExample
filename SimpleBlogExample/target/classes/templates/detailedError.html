@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymleaf.org">
+    <head>
+        <title>Error Page</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
+        <link rel="stylesheet" th:href="@{css/style.css}" href="../static/css/style.css"/>
+       
+    </head>
+     <body>
+     	<div class="error-container">
+	     	<article>
+	        <header>
+	            <h1 id="error-code" th:text="${error}">Ez itt a gond</h1> 
+	        </header>
+	    	<hr id="error-line" />
+	 	    <div class="error-details">
+		 	    <section >
+		            <p th:text="${message}">Ez az üzenet.</p>
+		            <p th:text="${path}">Elérési út.</p>
+		            <p th:text="${status}">Státusz</p>
+		            <p th:text="${timestamp}">Időpont</p>
+		        </section>
+	    	</div>
+	    	</article>
+		</div>
+    <footer>
+        <p class="footer">Made by Kakuk</p>
+    </footer>
+     
+     
+     
+     </body>
+       
+</html>
